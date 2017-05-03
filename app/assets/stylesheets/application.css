@@ -1,0 +1,66 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+.topnav {
+  background-color: #CA2027;
+  overflow: hidden;
+  display: list-item;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.top-bar-left {
+  float: left;
+  display: inline-block;
+}
+
+.top-bar-right {
+  float: right:
+}
+
+.top-bar input, button {
+  float: right;
+}
+
+.events-list {
+  background-image: url(https://pameliamacy.files.wordpress.com/2015/03/e8833-dpw_oh_280115_cliffcamping_04.jpg) ;
+}
+
+.index-title {
+  text-align: center;
+  font-family: Arial;
+}
+
+.box-content {
+  float: right;
+  color: #FFF;
+  width: 50%;
+}
+
+.event-box {
+  width: 60%;
+  margin: auto;
+  border: 1px solid #FFF;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.event-box img {
+  max-width: 40%;
+}
+
+.event-index-content {
+  
+}

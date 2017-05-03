@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Outdoor New England</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="topnav" id="myTopnav">
+      <div class="top-bar">
+        <div class="top-bar-left">
+          <div class="bar-links">
+              <span><%= link_to "Events", root_path %></span>
+              <span><%= link_to "Create Event", new_event_path %></span>
+          </div>
+        </div>
+        <div class="top-bar-right">
+          <div class="search">
+            <span class="has-form">
+              <input type="search" placeholder="Search">
+            </span>
+            <span class="search-button">
+              <button type="button" class="button">Search</button>
+            </span>
+          </div>
+        </div>
+        <h1 class="index-title">Outdoor New England</h1>
+      </div>
+    </div>
+    <div class="event-index-contents">
+      <%= yield %>
+    </div>
+  </body>
+</html>

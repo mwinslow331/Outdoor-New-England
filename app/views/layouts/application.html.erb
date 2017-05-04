@@ -3,7 +3,7 @@
   <head>
     <title>Outdoor New England</title>
     <%= csrf_meta_tags %>
-
+    <link rel="stylesheet" type="text/ss" href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -25,6 +25,14 @@
             <span class="search-button">
               <button type="button" class="button">Search</button>
             </span>
+            <div>
+              <% if current_user %>
+                Signed in as <strong><%= current_user.name %></strong>!
+                <%= link_to "Sign Out", signout_path, id: "sign_out" %>
+              <% else %>
+                <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in" %>
+              <% end %>
+            </div>
           </div>
         </div>
         <h1 class="index-title">Outdoor New England</h1>

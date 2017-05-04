@@ -13,6 +13,9 @@
  *= require_tree .
  *= require_self
  */
+ html {
+  background-image: url(https://s7d2.scene7.com/is/image/marmot/s17-newequip-1600?$dw%2Dhomehero$) ;
+ }
 .topnav {
   background-color: #CA2027;
   overflow: hidden;
@@ -35,13 +38,10 @@
   float: right;
 }
 
-.events-list {
-  background-image: url(https://pameliamacy.files.wordpress.com/2015/03/e8833-dpw_oh_280115_cliffcamping_04.jpg) ;
-}
-
 .index-title {
   text-align: center;
-  font-family: Arial;
+  font-family: 'Roboto Slab', serif;
+  color: #fffcfc;
 }
 
 .box-content {
@@ -55,12 +55,31 @@
   margin: auto;
   border: 1px solid #FFF;
   background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
 }
 
 .event-box img {
   max-width: 40%;
 }
 
-.event-index-content {
-  
+.trip-link a {
+  font-family: 'Roboto Slab', serif;;
+  color: #fffcfc;
+  font-size: 24px;
+}
+
+.trip-link a:hover {
+  color: #CA2027;
+}
+
+.events-list{
+  padding-top: 100px;
+}
+
+.show-page {
+  padding-top: 100px;
+}
+
+.form-box {
+  padding-top: 100px;
 }

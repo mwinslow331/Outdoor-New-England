@@ -34,8 +34,17 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem "omniauth-google-oauth2", "~> 0.2.1"
 
 group :development, :test do
+  gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'launchy'
+  gem 'pry-rails'
+  gem 'rspec-rails', '~> 3.5'
+  gem 'shoulda-matchers', require: false
+  gem 'valid_attribute'
+  gem "dotenv-rails"
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end

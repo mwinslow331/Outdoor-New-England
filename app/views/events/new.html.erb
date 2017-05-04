@@ -1,30 +1,30 @@
-<div class='form-box'>
+<div class='event-form-box'>
   <h1 class="new-event-header">Create A New Trip</h1>
 
   <%= form_for @event, :html => { :class => 'event-form'} do |f| %>
 
     <div class='row'>
-      <%= f.label :name, "Trip" %>
+      <%= f.label :name, "Trip" %><br>
       <%= f.text_field :name, :autofocus=>true %>
     </div>
 
     <div class='row'>
-      <%= f.label :image, "Image" %>
+      <%= f.label :image, "Image" %><br>
       <%= f.text_field :image %>
     </div>
 
     <div class='row'>
-      <%= f.label :description, "What's Happening?" %>
+      <%= f.label :description, "What's Happening?" %><br>
       <%= f.text_area :description %>
     </div>
 
     <div class='row'>
-      <%= f.label :essentials, "Essential Items" %>
+      <%= f.label :essentials, "Essential Items" %><br>
       <%= f.text_area :essentials %>
     </div>
 
     <div class='row'>
-      <%= f.label :limit, "Person Limit" %>
+      <%= f.label :limit, "Person Limit" %><br>
       <%= f.text_field :limit %>
     </div>
     <br>

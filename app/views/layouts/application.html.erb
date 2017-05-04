@@ -13,8 +13,20 @@
       <div class="top-bar">
         <div class="top-bar-left">
           <div class="bar-links">
-              <span><%= link_to "Events", root_path %></span>
-              <span><%= link_to "Create Event", new_event_path %></span>
+            <% if current_user %>
+            <%= link_to "Events", root_path %><br/>
+            <%= link_to "Create Event", new_event_path %><br/>
+            <% else %>
+            <%= link_to "Events", root_path %><br/>
+            <% end %>
+            <div class="sign-in">
+              <% if current_user %>
+                Signed in as <strong><%= current_user.name %></strong>!
+                <%= link_to "Sign Out", signout_path, id: "sign_out" %>
+              <% else %>
+              <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in" %>
+              <% end %>
+            </div>
           </div>
         </div>
         <div class="top-bar-right">
@@ -25,14 +37,6 @@
             <span class="search-button">
               <button type="button" class="button">Search</button>
             </span>
-            <div>
-              <% if current_user %>
-                Signed in as <strong><%= current_user.name %></strong>!
-                <%= link_to "Sign Out", signout_path, id: "sign_out" %>
-              <% else %>
-                <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in" %>
-              <% end %>
-            </div>
           </div>
         </div>
         <h1 class="index-title">Outdoor New England</h1>

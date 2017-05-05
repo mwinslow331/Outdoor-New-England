@@ -4,7 +4,9 @@
       <div class="event-box">
         <img src="<%= event.image %>" style="width:304px;height:228px;">
         <div class="box-content">
-          <span><%= link_to event.name, event %></span>
+          <div class="trip-link">
+            <span><%= link_to event.name, event %></span>
+          </div>
           <div>
             <span><%= event.description %></span>
           </div>

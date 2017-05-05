@@ -16,6 +16,15 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+/coverage
+.env
+.DS_Store
+/node_modules
+/app/assets/javascripts/bundle.js
+/react/coverage
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Ignore local uploads
+/public/uploads

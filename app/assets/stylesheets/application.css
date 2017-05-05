@@ -16,10 +16,35 @@
  html {
   background-image: url(https://s7d2.scene7.com/is/image/marmot/s17-newequip-1600?$dw%2Dhomehero$) ;
  }
+
+.event-form-box{
+  width: 40%;
+  margin: auto;
+  border: 1px solid #FFF;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 100px;
+}
+
+.new-event-header {
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  color: #fffcfc;
+}
+
+.row {
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  color: #fffcfc;
+}
+
+.submit-container {
+  text-align: center;
+}
+
 .topnav {
   background-color: #CA2027;
   overflow: hidden;
-  display: list-item;
+  /*display: list-item;*/
   position: fixed;
   width: 100%;
   top: 0;
@@ -31,7 +56,7 @@
 }
 
 .top-bar-right {
-  float: right:
+  float: right;
 }
 
 .top-bar input, button {
@@ -78,6 +103,17 @@
 
 .show-page {
   padding-top: 100px;
+  width: 60%;
+  margin: auto;
+  border: 1px solid #FFF;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: 'Roboto Slab', serif;;
+  color: #fffcfc;
+}
+
+.event-trip {
+  font-family: 'Roboto Slab', serif;;
+  color: #fffcfc;
 }
 
 .form-box {

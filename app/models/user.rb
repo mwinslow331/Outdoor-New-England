@@ -9,4 +9,7 @@ class User < ApplicationRecord
       user.save!
     end
   end
+
+  has_many :events
+  has_many :essential_items
 end

@@ -3,7 +3,7 @@
   <head>
     <title>Outdoor New England</title>
     <%= csrf_meta_tags %>
-    <link rel="stylesheet" type="text/ss" href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" type="text/ss" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ultra" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -15,7 +15,7 @@
           <div class="bar-links">
             <% if current_user %>
             <%= link_to "Events", root_path %><br/>
-            <%= link_to "Create Event", new_event_path %><br/>
+            <%= link_to "Create Event", static_pages_new_path %><br/>
             <% else %>
             <%= link_to "Events", root_path %><br/>
             <% end %>

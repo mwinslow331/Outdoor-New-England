@@ -12,10 +12,9 @@
  *
  *= require_tree .
  *= require_self
+ *= require datepicker
  */
- html {
-  background-image: url(https://s7d2.scene7.com/is/image/marmot/s17-newequip-1600?$dw%2Dhomehero$) ;
- }
+
 
 .event-form-box{
   width: 40%;
@@ -25,16 +24,26 @@
   padding-top: 100px;
 }
 
+.event-field-tile {
+  color: #fffcfc;
+}
+
+event-form {
+  color: #fffcfc;
+}
+
 .new-event-header {
   text-align: center;
-  font-family: 'Roboto Slab', serif;
-  color: #fffcfc;
+  /*font-family: 'Roboto Slab', serif;*/
+  font-family: 'Ultra', serif;
+  color: #4c4c4c;
 }
 
 .row {
   text-align: center;
   font-family: 'Roboto Slab', serif;
-  color: #fffcfc;
+  /*font-family: sans-serif;*/
+  color: #2A333C;
 }
 
 .submit-container {
@@ -42,7 +51,7 @@
 }
 
 .topnav {
-  background-color: #CA2027;
+  background-color: #F0F0F0;
   overflow: hidden;
   /*display: list-item;*/
   position: fixed;
@@ -65,8 +74,9 @@
 
 .index-title {
   text-align: center;
-  font-family: 'Roboto Slab', serif;
-  color: #fffcfc;
+  /*font-family: 'Roboto Slab', serif;*/
+  font-family: 'Ultra', serif;
+  color: #db3232;
 }
 
 .box-content {
@@ -88,13 +98,14 @@
 }
 
 .trip-link a {
-  font-family: 'Roboto Slab', serif;;
+  /*font-family: 'Roboto Slab', serif;*/
+  font-family: 'Ultra', serif;
   color: #fffcfc;
   font-size: 24px;
 }
 
 .trip-link a:hover {
-  color: #CA2027;
+  color: #db3232;
 }
 
 .events-list{
@@ -107,12 +118,14 @@
   margin: auto;
   border: 1px solid #FFF;
   background-color: rgba(0, 0, 0, 0.4);
-  font-family: 'Roboto Slab', serif;;
+  /*font-family: 'Roboto Slab', serif;*/
+  font-family: 'Ultra', serif;
   color: #fffcfc;
 }
 
 .event-trip {
-  font-family: 'Roboto Slab', serif;;
+  /*font-family: 'Roboto Slab', serif;*/
+  font-family: 'Ultra', serif;
   color: #fffcfc;
 }
 

@@ -10,16 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170504182609) do
+ActiveRecord::Schema.define(version: 20170508221127) do
+
+  create_table "essential_items", force: :cascade do |t|
+    t.string   "item_name",  null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "events", force: :cascade do |t|
     t.string   "name",        null: false
     t.string   "description", null: false
-    t.string   "essentials",  null: false
     t.string   "image",       null: false
     t.integer  "limit"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.date     "date"
   end
 
   create_table "users", force: :cascade do |t|

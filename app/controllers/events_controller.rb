@@ -5,6 +5,7 @@ class EventsController < ApplicationController
 
   def show
     @event = Event.find(params[:id])
+    @essential_items = @event.essential_items
   end
 
   def new
@@ -12,8 +13,8 @@ class EventsController < ApplicationController
   end
 
   def create
-    @game = Event.new(event_params)
-    if @game.save
+    @event = Event.new(event_params)
+    if @event.save
       flash[:notice] = "You created a new event!"
       redirect_to events_path
     else
@@ -24,6 +25,6 @@ class EventsController < ApplicationController
   private
 
   def event_params
-    params.require(:event).permit(:name, :image, :description, :essentials)
+    params.require(:event).permit(:name, :image, :description, :date)
   end
 end

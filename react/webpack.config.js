@@ -9,6 +9,14 @@ var config = {
   module: {
     loaders: [
       {
+        test: /\.css$/,
+        loader: "css-loader"
+      },
+      {
+        test: /\.scss$/,
+        loaders: ["style-loader", "sass-loader"]
+      },
+      {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: 'babel'

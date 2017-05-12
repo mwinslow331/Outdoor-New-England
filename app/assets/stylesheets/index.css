@@ -1,0 +1,33 @@
+html {
+ background-image: url(https://s7d2.scene7.com/is/image/marmot/s17-newequip-1600?$dw%2Dhomehero$);
+}
+
+.topnav {
+  background-color: #F0F0F0;
+  overflow: hidden;
+  /*display: list-item;*/
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.event-box {
+  width: 60%;
+  margin: auto;
+  border: 1px solid #FFF;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+}
+
+.event-box img {
+  max-width: 40%;
+}
+
+.sign-in {
+    width: 20%;
+    margin: auto;
+    border: 1px solid #FFF;
+    background-color: #F0F0F0;
+    margin-top: 100px;
+    text-align: center;
+}

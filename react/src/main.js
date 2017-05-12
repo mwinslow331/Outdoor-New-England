@@ -3,9 +3,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './containers/App';
 
-$(function() {
-  ReactDOM.render(
-    <App />,
-    document.getElementById('app')
-  );
+$(document).ready(function() {
+  let reactApp = document.getElementById('app');
+  if (reactApp) {
+    ReactDOM.render(
+      <App />,
+      document.getElementById('app')
+    );
+  }
 });

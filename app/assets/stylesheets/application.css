@@ -14,8 +14,6 @@
  *= require_self
  *= require datepicker
  */
-
-
 .event-form-box{
   width: 40%;
   margin: auto;
@@ -50,15 +48,6 @@ event-form {
   text-align: center;
 }
 
-.topnav {
-  background-color: #F0F0F0;
-  overflow: hidden;
-  /*display: list-item;*/
-  position: fixed;
-  width: 100%;
-  top: 0;
-}
-
 .top-bar-left {
   float: left;
   display: inline-block;
@@ -74,8 +63,8 @@ event-form {
 
 .index-title {
   text-align: center;
-  /*font-family: 'Roboto Slab', serif;*/
-  font-family: 'Ultra', serif;
+  font-family: fantasy;
+  /*font-family: 'Ultra', serif;*/
   color: #db3232;
 }
 
@@ -83,18 +72,6 @@ event-form {
   float: right;
   color: #FFF;
   width: 50%;
-}
-
-.event-box {
-  width: 60%;
-  margin: auto;
-  border: 1px solid #FFF;
-  background-color: rgba(0, 0, 0, 0.4);
-  margin-top: 20px;
-}
-
-.event-box img {
-  max-width: 40%;
 }
 
 .trip-link a {
@@ -109,7 +86,7 @@ event-form {
 }
 
 .events-list{
-  padding-top: 100px;
+  padding-top: 30px;
 }
 
 .show-page {

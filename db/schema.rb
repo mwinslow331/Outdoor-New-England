@@ -14,8 +14,10 @@ ActiveRecord::Schema.define(version: 20170508221127) do
 
   create_table "essential_items", force: :cascade do |t|
     t.string   "item_name",  null: false
+    t.integer  "event_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["event_id"], name: "index_essential_items_on_event_id"
   end
 
   create_table "events", force: :cascade do |t|

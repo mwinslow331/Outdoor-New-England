@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import EventFormContainer from './EventFormContainer';
+import CreateEventContainer from './CreateEventContainer';
 
 class App extends Component {
   constructor(props) {
@@ -11,14 +11,20 @@ class App extends Component {
   }
 
   eventPopulator(submission) {
-    this.setState({ events: this.state.events.concat(submission) })
+    fetch('/api/v1/events',
+      credentials: "same-origin"
+    )
+    .then(response => response.json())
+    .then(response => {
+      this.setState({ events: response.events })
+    })
   }
-debugger
+
   render() {
     return (
       <div className="row">
         <div className="small-9 small-centered columns">
-          <EventFormContainer eventPopulator={this.eventPopulator} />
+          <CreateEventContainer eventPopulator={this.state.eventPopulator} />
         </div>
       </div>
     );

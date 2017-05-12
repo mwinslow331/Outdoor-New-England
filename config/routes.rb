@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/static_pages/new', to: 'static_pages#new'
 
   root to: 'events#index'
+  
   resources :sessions, only: [:create, :destroy]
   resources :events, only: [:index, :show, :create]
 

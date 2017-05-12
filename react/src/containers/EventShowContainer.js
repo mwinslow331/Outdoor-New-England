@@ -11,7 +11,7 @@ class EventShowContainer extends Component {
   componentDidMount(){
     fetch('/api/v1/essentials/{$events}')
     .then(response => {
-      let parsed = respsonse.json()
+      let parsed = response.json()
       return parsed
     }).then(ids => {
       this.setState(ids: ids)
@@ -21,7 +21,7 @@ class EventShowContainer extends Component {
   componentDidMount(){
     fetch('/api/v1/essentials/{$essential_items}')
     .then(response => {
-      let parsed = respsonse.json()
+      let parsed = response.json()
       return parsed
     }).then(ids => {
       this.setState(ids: ids)

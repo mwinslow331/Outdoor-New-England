@@ -123,21 +123,25 @@ class CreateEventContainer extends Component {
       <div className="event-form">
 
         <label for="name">Name
+        <br/>
           <input type="text" className="name" value={this.state.name} onChange={this.eventNameHandle}/>
         </label>
         <br/>
 
         <label for="name">Image Url
+        <br/>
           <input type="textarea" className="image-url" value={this.state.image} onChange={this.eventImageHandle}/>
         </label>
         <br/>
 
         <label for="name">Description
+        <br/>
           <input type="text" className="description" value={this.state.description} onChange={this.eventDescriptionHandle}/>
         </label>
         <br/>
 
         <label for="name">Date
+        <br/>
           <DatePicker
             selected={this.state.startDate}
             onChange={this.dateHandleChange}
@@ -146,12 +150,15 @@ class CreateEventContainer extends Component {
         <br/>
 
         <label for="name">Essential Items
+        <br/>
           <input type="text" className="essentialItems" value={this.state.itemInput} onChange={this.eventEssentialsHandle}/>
+          <br/>
           <input type="button" value="Add Item" onClick={this.addItemSubmit}/>
         </label>
         <br/>
 
         <label for="name">Limit
+        <br/>
           <input type="text" className="limit" value={this.state.limit} onChange={this.eventLimitHandle}/>
         </label>
         <br/>

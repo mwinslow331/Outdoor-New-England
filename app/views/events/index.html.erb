@@ -1,17 +1,23 @@
 
   <div class="events-list">
     <% @events.each do |event| %>
-      <div class="event-box">
-        <img src="<%= event.image %>" style="width:304px;height:228px;">
-        <div class="box-content">
-          <div class="trip-link">
-            <span><%= link_to event.name, event %></span>
-          </div>
-          <div>
-            <span><%= event.description %></span>
-            <p><%= event.date %></p>
+      <% if Date.current < event.date %>
+        <div class="event-box">
+          <img src="<%= event.image %>" style="width:304px;height:228px;">
+          <div class="box-content">
+            <div class="trip-link">
+              <span><%= link_to event.name, event %></span>
+            </div>
+            <div class="description">
+              <span><%= event.description %></span>
+              <p><%= event.date.strftime("%B %d, %Y") %></p>
+            </div>
+            <div class="capacity">
+              <span>Capacity Limit: <%= event.limit %></p>
+            </div>
           </div>
         </div>
-      </div>
+        <% else %>
+      <% end %>
     <% end %>
   </div>

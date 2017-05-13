@@ -16,6 +16,7 @@
             <% if current_user %>
               <%= link_to "Events", root_path %><br/>
               <%= link_to "Create Event", static_pages_new_path %><br/>
+              <%= link_to "Profile", user_path(current_user) %>
             <% else %>
               <%= link_to "Events", root_path %><br/>
             <% end %>
@@ -37,10 +38,10 @@
     <div class="event-index-contents">
       <div class="sign-in">
         <% if current_user %>
-        Signed in as <strong><%= current_user.name %></strong>!
-        <%= link_to "Sign Out", signout_path, id: "sign_out" %>
+          Signed in as <strong><%= current_user.name %></strong>!
+          <%= link_to "Sign Out", signout_path, id: "sign_out" %>
         <% else %>
-        <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in" %>
+          <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in" %>
         <% end %>
       </div>
       <%= yield %>

@@ -11,5 +11,6 @@ class User < ApplicationRecord
   end
 
   has_many :events
+  has_many :attendances, through: :events
   has_many :essential_items
 end

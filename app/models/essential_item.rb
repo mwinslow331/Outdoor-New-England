@@ -3,7 +3,7 @@ class EssentialItem < ApplicationRecord
   validates :event_id, presence: true
   # validates :user_id, presence: true
 
-  belongs_to :event
-  belongs_to :user
-  belongs_to :attendance
+  belongs_to :event, optional: true
+  belongs_to :user, optional: true
+  belongs_to :attendance, optional: true
 end

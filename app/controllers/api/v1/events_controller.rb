@@ -3,10 +3,6 @@ class Api::V1::EventsController < ApplicationController
 
   def index
     binding.pry
-    # @event = Event.find(params[:id])
-    # essential_items = event.essential_items
-    # event_object = { event: event, essential_items: essential_items }
-    # render json: @event'
     @events = []
     Event.find(params[:id]).events.each do |event|
       event_to_send = {}
@@ -30,18 +26,22 @@ class Api::V1::EventsController < ApplicationController
       image: params[:image],
       limit: params[:limit]
     )
+
     if event.save!
+      attendance = Attendance.create!(
+      event: event,
+      user: current_user,
+      )
       essential_items = params[:essentialItems]
       essential_items.each do |item|
         EssentialItem.create!(
           item_name: item,
-          event_id: event.id
+          event_id: event.id,
+          user: current_user,
+          attendance_id: attendance.id
         )
       end
     end
-    # @test = "heeeyyyy"
-    # render json: @test
-    binding.pry
     redirect_to root_url
   end
 

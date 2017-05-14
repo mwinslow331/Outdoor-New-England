@@ -4,6 +4,7 @@ class Event < ApplicationRecord
   validates :date, presence: true
   validates :image, presence: true
 
-  has_many :users
+  has_many :users, through: :attendances
+  has_many :attendances
   has_many :essential_items
 end

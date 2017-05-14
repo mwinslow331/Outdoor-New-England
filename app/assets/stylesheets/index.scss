@@ -24,10 +24,15 @@ html {
 }
 
 .sign-in {
-    width: 20%;
-    margin: auto;
-    border: 1px solid #FFF;
-    background-color: #F0F0F0;
-    margin-top: 100px;
-    text-align: center;
+  width: 20%;
+  margin: auto;
+  border: 1px solid #FFF;
+  background-color: rgba(240, 240, 240, 0.5);
+  color: #db3232, 10%;
+  margin-top: 100px;
+  text-align: center;
+}
+
+a:link  {
+  text-decoration: none;
 }

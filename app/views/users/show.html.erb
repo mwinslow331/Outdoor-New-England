@@ -1,3 +1,11 @@
 <div class="user-page">
-  <%= current_user.name %>
+  <% @user.attendances.each do |attend_event| %>
+    <div class="user-event">
+      <%= attend_event.event.name %>
+        <img src="<%= attend_event.event.image %>" style="width:304px;height:228px;">
+        <% attend_event.event.essential_items.each do |item| %>
+          <p><%= item.item_name %></p>
+        <% end %>
+    </div>
+  <% end %>
 </div>

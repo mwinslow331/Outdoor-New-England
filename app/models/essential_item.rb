@@ -4,4 +4,5 @@ class EssentialItem < ApplicationRecord
   # validates :user_id, presence: true
 
   belongs_to :event
+  belongs_to :user, through: :essential_items
 end

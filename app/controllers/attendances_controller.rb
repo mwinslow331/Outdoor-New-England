@@ -21,14 +21,13 @@ class AttendancesController < ApplicationController
 
   def create
     # binding.pry
-    @event = Event.find(params[:event_id])
-    @attendance = Attendance.new
-    @attendance.user = current_user
-    @attendance.event = Event.find(params[:event_id])
-    if @attendance.save
-      redirect_to root_url
+    event = Event.find(params[:event_id])
+    user = current_user
+    attendance = Attendance.new(user: user, event: event)
+    if attendance.save
+      redirect_to root_path
     else
-      # render action: 'new'
+      render action: 'new'
     end
   end
 

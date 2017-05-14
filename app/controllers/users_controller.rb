@@ -7,9 +7,10 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(user_params)
+    @user = User.new
+    @attendance = Attendance.all
     if @user.save
-      redirect_to user_path
+      redirect_to user_path(current_user)
     else
       redirect_to events_path
     end
@@ -20,15 +21,4 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  # def index
-  #   @users = User.all
-  #   @current_user = current_user[:id]
-  #   # @current_user = @user
-  # end
-
-  private
-
-  def user_params
-    params.require(:user).permit(:name)
-  end
 end

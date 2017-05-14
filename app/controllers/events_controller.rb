@@ -20,7 +20,8 @@ class EventsController < ApplicationController
   end
 
   def create
-    @event = Event.new(event_params)
+    binding.pry
+    @event = Event.new(event_params.merge(:event_id, :user_id))
     if @event.save
       flash[:notice] = "You created a new event!"
       redirect_to events_path

@@ -10,7 +10,7 @@ class User < ApplicationRecord
     end
   end
 
-  has_many :events
-  has_many :attendances, through: :events
-  has_many :essential_items
+  has_many :events, through: :attendances
+  has_many :attendances
+  has_many :essential_items, through: :attendances
 end

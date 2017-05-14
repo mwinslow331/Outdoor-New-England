@@ -6,16 +6,17 @@
       </div>
       <% if current_user %>
         <div class="sign-up">
-          <%= form_tag "/users", method: :post do %>
+          <%= form_tag "/attendances", method: :post do %>
             <%= hidden_field_tag :event_id, @event.id %>
             <%= submit_tag "Join Event" %>
+
           <% end %>
       <% else %>
         </div>
       <% end %>
       <div class="event-items">
         <% @event.essential_items.each do |item| %>
-          <p><%= item.item_name %></p>
+          <p><%= link_to item.item_name %></p>
         <% end %>
       </div>
     </div>

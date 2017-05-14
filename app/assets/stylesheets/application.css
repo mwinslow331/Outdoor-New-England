@@ -86,23 +86,6 @@ event-form {
   color: #db3232;
 }
 
-.show-page {
-  padding-top: 100px;
-  width: 60%;
-  margin: auto;
-  border: 1px solid #FFF;
-  background-color: rgba(0, 0, 0, 0.4);
-  /*font-family: 'Roboto Slab', serif;*/
-  font-family: 'Ultra', serif;
-  color: #fffcfc;
-}
-
-.event-trip {
-  /*font-family: 'Roboto Slab', serif;*/
-  font-family: 'Ultra', serif;
-  color: #fffcfc;
-}
-
 .form-box {
   padding-top: 100px;
 }

@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-camping = Event.create!(name: "Mt. Osceola Weekend", image: "http://icampnh.com/wp-content/uploads/2010/04/Tripoli-camp2.jpg", description: "Camping Thursday through Sunday off Tripoli Road. Fun fun fun barrels of monkeys. Fun fun fun barrels of monkeys", date: "2017/07/15", limit: "10")
+camping = Event.create!(name: "Mt. Osceola Weekend", image: "http://icampnh.com/wp-content/uploads/2010/04/Tripoli-camp2.jpg", description: "Camping Thursday through Sunday off Tripoli Road. Fun fun fun barrels of mo nkeys. Fun fun fun barrels of monkeys", date: "2017/07/15", limit: "10")
 
 camping_items = ["Grill", "10 bundles firewood", "Securable Food Bin", "Shower in a bag"]
 

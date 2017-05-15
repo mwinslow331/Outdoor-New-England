@@ -2,6 +2,7 @@ class EventsController < ApplicationController
   respond_to :json, :html
 
   def index
+    @current_user = current_user
     @events = Event.all.order(:date)
     respond_to do |format|
       format.json { respond_with(@events) }

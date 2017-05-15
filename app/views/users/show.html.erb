@@ -4,7 +4,6 @@
       <%= attend_event.event.name %>
         <img src="<%= attend_event.event.image %>" style="width:304px;height:228px;">
         <% attend_event.event.essential_items.each do |item| %>
-
           <% if item.user == current_user %>
             <p><%= item.item_name %></p>
           <% end %>

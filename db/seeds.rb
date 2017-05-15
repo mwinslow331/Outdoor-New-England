@@ -15,7 +15,7 @@ end
 
 # camping = EssentialItem.create()
 
-skiing = Event.create!(name: "Killington Trip", image: "https://theskimonster.com/files/theskimonster/ckfinder/images/killington-superstar-2.jpeg", description: "Three Days and Four Nights Skiing the Beast of the East. Fun fun fun barrels of monkeys. Fun fun fun barrels of monkeys", date: "2017/07/22", limit: "12")
+skiing = Event.create!(name: "Killington Trip", image: "https://theskimonster.com/files/theskimonster/ckfinder/images/killington-superstar-2.jpeg", description: "Three Days and Four Nights Skiing the Beast of the East. Fun fun fun barrels of monkeys. Fun fun fun barrels of monkeys", date: "2018/01/22", limit: "12")
 
 skiing_items = ["Slow Cooker", "Mix for whiskey smash", "Board Games", "Apres ski lunch"]
 

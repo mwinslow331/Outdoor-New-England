@@ -11,7 +11,7 @@
       <div class="sign-up">
         <%= form_tag "/attendances", method: :post do %>
           <%= hidden_field_tag :event_id, @event.id %>
-          <label for="essntial_items">Essential Items</label>
+          <label for="essential_items">Essential Items</label>
           <% @event.essential_items.each do |item| %>
             <div class="check-item-list">
               <input type="checkbox" value="<%= item.id %>" name="event[item_ids][]" id="<%= "#{item.id}" %>">

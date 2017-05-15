@@ -68,8 +68,6 @@ class CreateEventContainer extends Component {
       essentialItems: this.state.essentialItems,
       limit: this.state.limit
     }
-    // debugger;
-    // this.props.eventPopulator(requestBody)
     fetch('/api/v1/events', {
       method: 'POST',
       credentials: "same-origin",

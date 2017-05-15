@@ -33,7 +33,6 @@ event-form {
 
 .new-event-header {
   text-align: center;
-  /*font-family: 'Roboto Slab', serif;*/
   font-family: 'Ultra', serif;
   color: #4c4c4c;
 }
@@ -41,7 +40,6 @@ event-form {
 .row {
   text-align: center;
   font-family: 'Roboto Slab', serif;
-  /*font-family: sans-serif;*/
   color: #2A333C;
 }
 
@@ -65,7 +63,6 @@ event-form {
 .index-title {
   text-align: center;
   font-family: fantasy;
-  /*font-family: 'Ultra', serif;*/
   color: #db3232;
 }
 
@@ -76,7 +73,6 @@ event-form {
 }
 
 .trip-link a {
-  /*font-family: 'Roboto Slab', serif;*/
   font-family: 'Ultra', serif;
   color: #fffcfc;
   font-size: 24px;

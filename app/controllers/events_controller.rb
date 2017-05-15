@@ -7,7 +7,6 @@ class EventsController < ApplicationController
       format.json { respond_with(@events) }
       format.html { respond_with(@events) }
     end
-    # @events
   end
 
   def show

@@ -1,13 +1,11 @@
 html {
- background-image: image-url("starbackground.jpg");
-
+  background-image: image-url("starbackground.jpg");
   background-size: cover;
 }
 
 .topnav {
   background-color: rgba(240, 240, 240, 0.5);
   overflow: hidden;
-  /*display: list-item;*/
   position: fixed;
   width: 100%;
   top: 0;

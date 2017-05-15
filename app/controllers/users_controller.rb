@@ -2,7 +2,6 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    # @event = @user.event
     @current_user = current_user
   end
 
@@ -14,7 +13,6 @@ class UsersController < ApplicationController
     else
       redirect_to events_path
     end
-    # @current_user = current_user
   end
 
   def new

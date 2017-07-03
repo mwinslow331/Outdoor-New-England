@@ -1,23 +1,28 @@
 <div class="show-page">
   <h1><%= @event.name %></h1>
-    <div class="event-trip">
-      <div class="trip-image">
-        <img src="<%= @event.image %>" style="width:304px;height:228px;">
-      </div>
-      <% if current_user %>
-        <div class="sign-up">
-          <%= form_tag "/attendances", method: :post do %>
-            <%= hidden_field_tag :event_id, @event.id %>
-            <%= submit_tag "Join Event" %>
 
+  <div class="event-trip">
+
+    <div class="trip-image">
+      <img src="<%= @event.image %>" style="width:304px;height:228px;">
+    </div>
+
+    <% if current_user %>
+      <div class="sign-up">
+        <%= form_tag "/attendances", method: :post do %>
+          <%= hidden_field_tag :event_id, @event.id %>
+          <label for="essential_items">Essential Items</label>
+          <% @event.essential_items.each do |item| %>
+            <div class="check-item-list">
+              <input type="checkbox" value="<%= item.id %>" name="event[item_ids][]" id="<%= "#{item.id}" %>">
+              <label for="<%= "#{item.id}" %>"><%= "#{item.item_name}" %></label>
+            </div>
           <% end %>
-      <% else %>
-        </div>
-      <% end %>
-      <div class="event-items">
-        <% @event.essential_items.each do |item| %>
-          <p><%= link_to item.item_name %></p>
+          <%= submit_tag "Join Event" %>
         <% end %>
       </div>
+    <% end %>
+
     </div>
+  </div>
 </div>

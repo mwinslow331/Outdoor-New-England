@@ -2,11 +2,6 @@ class Api::V1::EventsController < ApplicationController
   skip_before_action :verify_authenticity_token, only: [:index,  :create, :new, :show]
 
   def index
-    binding.pry
-    # @event = Event.find(params[:id])
-    # essential_items = event.essential_items
-    # event_object = { event: event, essential_items: essential_items }
-    # render json: @event'
     @events = []
     Event.find(params[:id]).events.each do |event|
       event_to_send = {}
@@ -39,9 +34,6 @@ class Api::V1::EventsController < ApplicationController
         )
       end
     end
-    # @test = "heeeyyyy"
-    # render json: @test
-    binding.pry
     redirect_to root_url
   end
 
@@ -63,8 +55,6 @@ class Api::V1::EventsController < ApplicationController
 
   def new
     @event = Event.new
-    # essential_items = event.essential_items
-    # event_object = { event: event, essential_items: essential_items }
   end
-
+  
 end

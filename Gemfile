@@ -18,7 +18,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'responders'
 
-gem "omniauth-google-oauth2", "~> 0.2.1"
+gem "omniauth-google-oauth2"
 
 group :development, :test do
   gem 'capybara'

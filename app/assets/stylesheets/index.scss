@@ -1,11 +1,11 @@
 html {
- background-image: image-url("starbackground.jpg");
+  background-image: image-url("starbackground.jpg");
+  background-size: cover;
 }
 
 .topnav {
   background-color: rgba(240, 240, 240, 0.5);
   overflow: hidden;
-  /*display: list-item;*/
   position: fixed;
   width: 100%;
   top: 0;
@@ -14,9 +14,9 @@ html {
 .event-box {
   width: 60%;
   margin: auto;
-  border: 1px solid #FFF;
   background-color: rgba(0, 0, 0, 0.4);
   margin-top: 20px;
+  box-shadow: 0px 2px 30px;
 }
 
 .event-box img {
@@ -26,11 +26,11 @@ html {
 .sign-in {
   width: 20%;
   margin: auto;
-  border: 1px solid #FFF;
   background-color: rgba(240, 240, 240, 0.5);
   color: #db3232, 10%;
   margin-top: 100px;
   text-align: center;
+  box-shadow: 0px 2px 30px;
 }
 
 a:link  {

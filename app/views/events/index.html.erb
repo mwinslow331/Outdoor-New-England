@@ -13,7 +13,9 @@
               <p><%= event.date.strftime("%B %d, %Y") %></p>
             </div>
             <div class="capacity">
-              <span>Capacity Limit: <%= event.limit %></p>
+              <% spots_taken = Attendance.where(event_id: event.id).size %>
+              <% remaining_spots = event.limit - spots_taken %>
+              <span>Spots Remaining: <%= remaining_spots %></p>
             </div>
           </div>
         </div>

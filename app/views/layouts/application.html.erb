@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Outdoor New England</title>
+    <title>Outside New England</title>
     <%= csrf_meta_tags %>
     <link rel="stylesheet" type="text/ss" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ultra" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -13,7 +13,7 @@
       <div class="top-bar">
         <div class="top-bar-left">
           <div class="bar-links">
-            <% if current_user %>
+            <% if @current_user %>
               <%= link_to "Events", root_path %><br/>
               <%= link_to "Create Event", static_pages_new_path %><br/>
               <%= link_to "Profile", user_path(current_user) %>
@@ -32,13 +32,13 @@
             </span>
           </div>
         </div>
-        <h1 class="index-title">Outdoor New England</h1>
+        <h1 class="index-title">Outside New England</h1>
       </div>
     </div>
     <div class="event-index-contents">
       <div class="sign-in">
-        <% if current_user %>
-          <strong>Signed in as <%= current_user.name %></strong>!
+        <% if @current_user %>
+          <strong>Signed in as <%= @current_user.name %></strong>!
           <%= link_to "Sign Out", signout_path, id: "sign_out" %>
         <% else %>
           <%= link_to "Sign in with Google", "/auth/google_oauth2", id: "sign_in" %>

@@ -2,12 +2,12 @@ class EventsController < ApplicationController
   respond_to :json, :html
 
   def index
-    @events = Event.all
+    @current_user = current_user
+    @events = Event.all.order(:date)
     respond_to do |format|
       format.json { respond_with(@events) }
       format.html { respond_with(@events) }
     end
-    # @events
   end
 
   def show
@@ -20,8 +20,8 @@ class EventsController < ApplicationController
   end
 
   def create
-    binding.pry
     @event = Event.new(event_params.merge(:event_id, :user_id))
+    binding.pry
     if @event.save
       flash[:notice] = "You created a new event!"
       redirect_to events_path

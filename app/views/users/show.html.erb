@@ -1,13 +1,17 @@
 <div class="user-page">
   <% @user.attendances.each do |attend_event| %>
     <div class="user-event">
-      <%= attend_event.event.name %>
+      <div class="event-name">
+        <%= attend_event.event.name %>
+      </div>
         <img src="<%= attend_event.event.image %>" style="width:304px;height:228px;">
+        <div class="user-items">
         <% attend_event.event.essential_items.each do |item| %>
           <% if item.user == current_user %>
             <p><%= item.item_name %></p>
           <% end %>
         <% end %>
+        </div>
     </div>
   <% end %>
 </div>

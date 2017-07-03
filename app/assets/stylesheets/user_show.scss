@@ -1,10 +1,19 @@
 .user-event {
-  padding-top: 100px;
   width: 60%;
   margin: auto;
-  border: 1px solid #FFF;
   background-color: rgba(0, 0, 0, 0.4);
-  font-family: 'Ultra', serif;
-  color: #fffcfc;
   margin-top: 20px;
+  box-shadow: 0px 2px 30px;
+  color: #fffcfc;
+}
+.user-items {
+  float: right;
+}
+
+.event-name {
+  float: right;
+}
+
+.user-event img {
+  max-width: 40%;
 }

@@ -1,4 +1,4 @@
-Outdoor New England 
+# **Outdoor New England**
 
 I moved up to the Boston Area several years ago and didn't really know a lot of
 people who enjoyed camping, skiing, kayaking, etc. This is where I came
